@@ -1,0 +1,46 @@
+{
+    "name": "Pulpmedia/bootstrap-bundle",
+    "type": "symfony-bundle",
+    "description": "This Bundle provides some simple Bootrap Templates for Symfony2 and Bootstrap 3.0",
+    "keywords": ["rest"],
+    "homepage": "http://www.pulpmedia.at",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Alexandre Kilian",
+            "email": "alexandre@pulpmedia.at"
+        },
+    ],
+
+    "require": {
+        "php":                            ">=5.3.2",
+        "symfony/framework-bundle":       "~2.1",
+    },
+
+    "require-dev": {
+        "sensio/framework-extra-bundle":  "~2.1",
+        "symfony/form": "~2.1",
+        "symfony/yaml": "~2.1",
+        "symfony/security": "~2.1",
+    },
+
+    "suggest": {
+        "sensio/framework-extra-bundle":  "Add support for route annotations and the view response listener",
+    },
+
+    "conflict": {
+    },
+
+    "autoload": {
+        "psr-0": { "Pulpmedia\\BootstrapBundle": "" }
+    },
+
+    "target-dir": "Pulpmedia/BootstrapBundle",
+
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}

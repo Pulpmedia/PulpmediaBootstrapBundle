@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>{% block title %}Pulpmedia Bootstrap Bundle Base{% endblock %}</title>
+		{% block metadata %}
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		{% endblock metadata %}
+		<!-- Bootstrap -->
+		<link href="{{ asset('bundles/pulpmediabootstrap/css/bootstrap.min.css')}}" rel="stylesheet" media="screen">
+
+		{% block stylesheets %}
+			
+		{% endblock stylesheets %}
+
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+			<script src="{{ asset('bundles/pulpmediabootstrap/js/html5shiv.js') }}"></script>
+			<script src="{{ asset('bundles/pulpmediabootstrap/js/respond.min.js') }}"></script>
+		<![endif]-->
+
+	</head>
+	<body>
+
+		{% block body %}
+		<h1>Hello, world!</h1>
+		{% endblock body %}
+		
+		{% block javascripts %}
+		<script src="//code.jquery.com/jquery.js"></script>
+		<script>window.jQuery || document.write('<script src="{{ asset("bundles/pulpmediabootstrap/js/jquery-2.0.3.min.js") }}"><\/script>')</script>
+		<script src="{{ asset('bundles/pulpmediabootstrap/js/bootstrap.min.js') }}"></script>
+		<script src="{{ asset('bundles/pulpmediabootstrap/js/plugins.js') }}"></script>
+		{% endblock %}
+		
+		{% block analytics %}
+		<!-- GOOGLE ANALYTICS MISSING -->
+		{% endblock %}
+	</body>
+</html>
